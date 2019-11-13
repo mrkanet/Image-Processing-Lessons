@@ -1,0 +1,24 @@
+c: class x: pixel değeri
+p(x|c) = p(c^x)/p(c) (x değerinin c classında olma ihtimali)
+p(c|x) : c classında x değerinin bulunma olasılığı
+
+Bayes' rule = 
+https://www.khanacademy.org/partner-content/wi-phi/wiphi-critical-thinking/wiphi-fundamentals/v/bayes-theorem
+https://www.youtube.com/watch?v=E2pOJwSwWDk
+
+p(c) = toplam veri seti içerisinde c classının bulunma ihtimali.
+örn: 0 classı 60000 veri içinde 7895 adet bulunuyorsa bulunma ihtimali 7895/60000 dir.
+
+multi-varialbe distribution, normal distribution
+
+N(x; n:nü, s:sigma) = (1/(2*(pi**(D/2))*(norm(s)**(1/2))) * e**(-(1/2)*(x-n)**T * (s**-1) *(x-n)))
+
+
+
+
+
+incele:
+https://en.wikipedia.org/wiki/Multivariate_normal_distribution
+https://peterroelants.github.io/posts/multivariate-normal-primer/
+https://stackoverflow.com/questions/48465683/visualizing-a-multivariate-normal-distribution-with-numpy-and-matplotlib-in-3-di
+
