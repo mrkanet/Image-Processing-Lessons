@@ -75,3 +75,24 @@ for i in range(10):
 print("Değer")
 print(sayi,enbuyukpdf1)'''
 
+
+
+my_test_image1=plt.imread('manzara.jpg')
+m,n,k=my_test_image1.shape
+
+my_test_image=my_test_image1[:,:,0]
+im_5=my_test_image.reshape(1, m*n)
+plt.imshow(my_test_image)
+plt.show()
+
+my_list=[]
+for i in range(10):
+    pdf_t=0
+    for j in range(784):
+        x=im_5[0,j]
+        m_1,std_1=get_my_mean_and_std(i,j)
+        pdf_deger=my_pdf_1(x, m_1, std_1)
+        pdf_t = pdf_t + pdf_deger
+    print(pdf_t)
+    my_list.append(pdf_t)
+
